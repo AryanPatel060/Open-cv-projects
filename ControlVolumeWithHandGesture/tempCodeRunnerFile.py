@@ -1,0 +1,1 @@
+cv2.circle(img,(x1,y1) , 15 ,(255,0,255) , cv2.FILLED)
