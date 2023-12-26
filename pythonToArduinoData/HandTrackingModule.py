@@ -2,6 +2,7 @@ import cv2
 import mediapipe as mp
 import time
 
+
 class handDetector():
     def __init__(self,mode = False , maxHands = 2 ,detectionCon = 0.5 , trackCon = 0.5):
         self.mode = mode
@@ -36,16 +37,6 @@ class handDetector():
 
 
         return lmList
-    # # def fingersUp(self,):
-    #     tipIds =  [4,8,12,16,20]
-    #     fingers  =[]
-    #     for id in range(0,5):
-    #         if lmlist[tipIds[id]][2]< lmlist[tipIds[id]-2][2]:
-    #             fingers.append(1)
-    #         else:
-    #             fingers.append(0)
-    #     return fingers
-
 def main():
     cap = cv2.VideoCapture(0)
     pTime=0

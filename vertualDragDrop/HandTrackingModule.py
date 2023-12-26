@@ -34,18 +34,7 @@ class handDetector():
                 if draw:
                     cv2.circle(img,(cx,cy),4,(0,255,0) , cv2.FILLED)
 
-
         return lmList
-    # # def fingersUp(self,):
-    #     tipIds =  [4,8,12,16,20]
-    #     fingers  =[]
-    #     for id in range(0,5):
-    #         if lmlist[tipIds[id]][2]< lmlist[tipIds[id]-2][2]:
-    #             fingers.append(1)
-    #         else:
-    #             fingers.append(0)
-    #     return fingers
-
 def main():
     cap = cv2.VideoCapture(0)
     pTime=0
