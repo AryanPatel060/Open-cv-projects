@@ -1,0 +1,1 @@
+ cmd = ''.join(fingers)
